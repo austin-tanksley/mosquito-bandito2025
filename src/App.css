@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+
+@theme{
+    --color-tundra: #f5f4f3;
+    --color-bandito-red: #EF3F24;
+}
+
+body
+{
+    background-color: var(--color-tundra);
+}
+
