@@ -3,6 +3,7 @@ import Header from './Header'
 import Hero from './Hero'
 import About from './About'
 import Reasons from './Reasons'
+import Process from './Process'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <About />
         <Reasons />
+        <Process />
     </>
   )
 }

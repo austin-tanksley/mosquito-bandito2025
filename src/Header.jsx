@@ -13,7 +13,7 @@ function Header() {
             <img src={LOGO} alt="" />
             <nav>
                 <ul className='hidden md:flex gap-4'>
-                    <li className={navBarStyle}><a href="#">Our 3-Step Process</a></li>
+                    <li className={navBarStyle}><a href="#process">Our 3-Step Process</a></li>
                     <li className={navBarStyle}><a href="#">Request Quote</a></li>
                 </ul>
             </nav>
