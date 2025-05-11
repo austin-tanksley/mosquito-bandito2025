@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Header from './Header'
+import Hero from './Hero'
+import About from './About'
+import Reasons from './Reasons'
 import './App.css'
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
   return (
     <>
         <Header />
+        <Hero />
+        <About />
+        <Reasons />
     </>
   )
 }

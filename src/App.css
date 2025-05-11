@@ -1,13 +1,58 @@
 @import 'tailwindcss';
 
 
-@theme{
-    --color-tundra: #f5f4f3;
-    --color-bandito-red: #EF3F24;
+@font-face{
+    font-family: plathorn;
+    src: url('/fonts/plathorn-norm-medium.woff2') format('woff2') ;
+}
+@font-face{
+    font-family: open-sans;
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: open-sans;
+    src: url('/fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600; 
+}
+@font-face{
+    font-family: open-sans;
+    src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
+@theme{
+    --color-bandito-black: #1D1613;
+    --color-tundra: #f5f4f3;
+    --color-bandito-red: #EF3F24;
+    --color-bandito-green: #3D4A40;
+    --color-bandito-tan: #E7E2D9;
+    --color-darker-tan: #b3b0a9;
+    --color-bandito-grey: #B5B5B5;
+
+    --font-display: 'plathorn';
+    --font-body: 'open-sans';
+
+    /* --breakpoint-xs: 440px; */
+}
+@layer utilities {
+    .bg-dynamic {
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .type-body-semibold{
+        font-family: 'open-sans', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 175%;
+    }
+}
 body
 {
     background-color: var(--color-tundra);
+    
 }
 
