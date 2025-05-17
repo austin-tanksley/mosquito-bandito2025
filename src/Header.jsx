@@ -10,7 +10,8 @@ function Header() {
         <div
         className='container mx-auto bg-tundra flex justify-between items-center py-4 px-2' 
         >
-            <img src={LOGO} alt="" />
+            <img src={LOGO} alt="" 
+            className='h-[72px]'/>
             <nav>
                 <ul className='hidden md:flex gap-4'>
                     <li className={navBarStyle}><a href="#process">Our 3-Step Process</a></li>
