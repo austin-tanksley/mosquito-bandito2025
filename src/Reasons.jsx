@@ -7,6 +7,7 @@ export default function Reasons() {
             <h2 className="mx-auto text-center font font-display mb-8 text-2xl">Why Choose Mosquito Bandito?</h2>
             <div className="mx-auto max-w-[768px] grid gap-4">
                 <ReasonCard 
+                    hiddenProp = {false}
                     title="Fast & Effective Results"
                     subtitle="See a dramatic reduction in mosquitoes within 24 hours of treatment."
                     body="Our scientifically formulated barrier spray starts working immediately upon application. Most customers report a noticeable decrease in mosquito activity within hours, not days. Our formula targets mosquitoes' nervous systems, eliminating them on contact while creating a repellent barrier that keeps new mosquitoes from entering your property. Unlike DIY solutions that provide temporary relief, our professional-grade treatments attack the problem at its source for truly effective results you can see and feel."

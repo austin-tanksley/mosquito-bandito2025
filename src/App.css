@@ -26,9 +26,12 @@
     --color-tundra: #f5f4f3;
     --color-bandito-red: #EF3F24;
     --color-bandito-green: #3D4A40;
+    --color-bandito-green-200: #89998D;
+    --color-bandito-green-400: #92B5A1;
     --color-bandito-tan: #E7E2D9;
     --color-darker-tan: #b3b0a9;
     --color-bandito-grey: #B5B5B5;
+    --color-bandito-grey-400: #5c5c5c;
 
     --font-display: 'plathorn';
     --font-body: 'open-sans';

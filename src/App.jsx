@@ -1,21 +1,27 @@
-import { useState } from 'react'
+import { useState,useRef } from 'react'
 import Header from './Header'
 import Hero from './Hero'
 import About from './About'
 import Reasons from './Reasons'
 import Process from './Process'
+import Testimonial from './Testimonial'
+import { testimonial } from './testimonial.json'
+import Form from './Form'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const processRef = useRef(null)
 
   return (
     <>
-        <Header />
+        <Header processRef={processRef}/>
         <Hero />
         <About />
         <Reasons />
-        <Process />
+        <Process ref={processRef}/>
+        <Testimonial data={testimonial}/>
+        <Form />
     </>
   )
 }

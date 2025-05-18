@@ -3,9 +3,9 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import MinusIcon from '/ic-minus.svg'
 
-export default function ReasonCard({title='title', subtitle = 'subtitle', body = 'body goes here', body2 = ''}) {
+export default function ReasonCard({title='title', subtitle = 'subtitle', body = 'body goes here', body2 = '', hiddenProp = true}) {
     
-    const [hidden, setHidden] = useState(true)
+    const [hidden, setHidden] = useState(hiddenProp)
     const plusLineRef = useRef(null)
     const bodyRef = useRef(null)
 
@@ -36,10 +36,10 @@ export default function ReasonCard({title='title', subtitle = 'subtitle', body =
 
 
     return(
-        <div className="p-4 bg-white max-w-[768px] rounded-lg">
+        <div className="p-4 bg-white max-w-[768px] rounded-lg shadow-lg">
             <div id="top" className="flex items-center gap-4 mb-2">
 
-                <button onClick={() =>setHidden(h => !h)} className="relative rounded-4xl bg-bandito-tan p-2 hover:shadow-sm hover:bg-darker-tan">
+                <button onClick={() =>setHidden(h => !h)} className="relative rounded-4xl bg-bandito-tan p-2 hover:shadow-sm hover:bg-darker-tan duration-500">
                     <img src={MinusIcon} alt=""  className="h-[32px]"/>
                     <img 
                         src={MinusIcon} alt="" 
@@ -50,7 +50,7 @@ export default function ReasonCard({title='title', subtitle = 'subtitle', body =
 
                 <h3 className="font-body font-bold text-bandito-black">{title}</h3>    
             </div>
-            <p className="font-body text-sm font-semibold text-bandito-grey">{subtitle}</p>
+            <p className="font-body text-md font-semibold text-bandito-grey">{subtitle}</p>
             <p
                 ref={bodyRef}
                 style={{
@@ -58,7 +58,7 @@ export default function ReasonCard({title='title', subtitle = 'subtitle', body =
                     height: 0,
                     overflow: 'hidden',
                 }}
-                className=" mt-2 font-body text-sm"
+                className=" mt-2 font-body text-md leading-[175%]"
             >
                 {body}
                 

@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import LOGO from '/mosquito-bandito-logo.svg'
 import PHONE_ICON from '/phone.svg'
 
-const navBarStyle = 'hover:font-semibold'
+const navBarStyle = 'hover:font-semibold cursor-pointer'
 
-function Header() {
+function Header({processRef}) {
+
+  const scrollProcess = () => {
+    processRef.current?.scrollIntoView({behavior: "smooth"});
+  }
 
     return (
         <div
@@ -14,7 +18,12 @@ function Header() {
             className='h-[72px]'/>
             <nav>
                 <ul className='hidden md:flex gap-4'>
-                    <li className={navBarStyle}><a href="#process">Our 3-Step Process</a></li>
+                    <button 
+                      className={navBarStyle}
+                      onClick={()=>scrollProcess()}
+                    >
+                      Our 3-Step Process
+                    </button>
                     <li className={navBarStyle}><a href="#">Request Quote</a></li>
                 </ul>
             </nav>
