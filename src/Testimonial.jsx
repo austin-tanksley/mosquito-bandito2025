@@ -31,7 +31,7 @@ export default function Testimonial({ data = [] }) {
   });
 
   return (
-    <div className="container py-24 mx-auto max-w-[1024px] px-2">
+    <div className="container py-24 mx-auto max-w-[1024px] px-2 mb-24">
       <h2 className="mx-auto py-4 mb-8 border-b-bandito-red border-b-2 font-display text-2xl w-fit">
         What Our Customers Are Saying
       </h2>

@@ -2,27 +2,27 @@
 
 const Form = () => {
 return (
-  <div className="container px-2 mx-auto">
-    <div className=" border-solid border-[2px] border-bandito-grey-400 py-12 px-8 rounded-2xl">
-      <div>
+  <div className="container px-2 mx-auto mb-24">
+    <div className="border-solid border-[3px] border-bandito-grey-400 py-12 px-8 rounded-2xl">
+      <div className="grid xl:grid-cols-2">
         <div className="headings mb-4">
-          <h2>Request a Quote</h2>
-          <p>We’ll give you a call, and schedule a good time to come out and assess your property.  </p>
+          <h2 className="  font-display text-2xl mb-4">Request a Quote</h2>
+          <p className="pb-4 mr-4 border-b-4 w-fit border-bandito-red font-body ">We’ll give you a call, and schedule a good time to come out and assess your property.  </p>
         </div>
         <form action=""
-          className="grid gap-4"
+          className="grid gap-4 md:grid-cols-2"
         >
           <div className="form-ite grid">
-            <label htmlFor="Firs-Name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
+            <label htmlFor="first-name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
             <input type="text" id="First-Name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
-            <label htmlFor="Last-Name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
-            <input type="text" id="Last-Name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <label htmlFor="last-name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
+            <input type="text" id="last-name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
-            <label htmlFor="Email" className="font-body text-bandito-grey-400 text-sm font-semibold" >Email*</label>
-            <input type="text" id="Email" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <label htmlFor="email" className="font-body text-bandito-grey-400 text-sm font-semibold" >Email*</label>
+            <input type="email" id="email" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
             <label htmlFor="Phone" className="font-body text-bandito-grey-400 text-sm font-semibold" >Phone Number*</label>
@@ -40,7 +40,9 @@ return (
             <label htmlFor="Zip-Code" className="font-body text-bandito-grey-400 text-sm font-semibold" >Zip Code*</label>
             <input type="text" id="Zip-Code" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
-          <button className="justify-self-end bg-bandito-green-400 text-tundra px-6 py-2 rounded-lg border-solid border-bandito-green border-[2px]">Request</button>
+          <div></div>
+          <div></div>
+          <button className="justify-self-end bg-bandito-green-400 text-tundra px-6 py-2 rounded-lg border-solid border-bandito-green border-[3px]">Request</button>
         </form>
       </div>
     </div>

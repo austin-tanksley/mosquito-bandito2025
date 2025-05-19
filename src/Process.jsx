@@ -30,6 +30,8 @@ const Process = forwardRef((_,ref) =>
                   image={application}
                 />
                 <ProcessCard number={3} 
+                  heading="Ongoing Protection"
+                  subheading="The treatment eliminates mosquitoes on contact and continues working for weeks, while our scheduled follow-ups ensure continuous protection all season long."
                   image={protection}
                 />
             </div>

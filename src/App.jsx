@@ -7,6 +7,7 @@ import Process from './Process'
 import Testimonial from './Testimonial'
 import { testimonial } from './testimonial.json'
 import Form from './Form'
+import Footer from './Footer'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Process ref={processRef}/>
         <Testimonial data={testimonial}/>
         <Form />
+        <Footer />
     </>
   )
 }
