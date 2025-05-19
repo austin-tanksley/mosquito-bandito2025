@@ -1,8 +1,12 @@
+import { forwardRef } from "react";
 
 
-const Form = () => {
+const Form = forwardRef((_,ref) => 
+{
 return (
-  <div className="container px-2 mx-auto mb-24">
+  <div
+    ref={ref}
+    className="container px-2 mx-auto mb-24">
     <div className="border-solid border-[3px] border-bandito-grey-400 py-12 px-8 rounded-2xl">
       <div className="grid xl:grid-cols-2">
         <div className="headings mb-4">
@@ -48,6 +52,6 @@ return (
     </div>
   </div>
 )
-}
+});
 
 export default Form;

@@ -13,7 +13,7 @@ const Footer = () => {
         <img src={WhiteLogo} alt="Logo"></img>
         <div className="grid grid-rows-3 grid-cols-2 sm:grid-rows-2 items-end">
           <p className="col-start-1 col-end-3 text-tundra">© Copyright 2025  |  Mosquito Bandito LLC <br /><span className="text-bandito-green-200">Designed + Built by Rippled Studio</span></p>
-          <div className="flex gap-2 items-end col-start-1 col-end-3 sm:col-end-2">
+          <div className="flex gap-2 items-center col-start-1 col-end-3 sm:col-end-2">
             <FaPhone className="text-tundra size-4"/>
             <a href="tel:+19186880232" className="text-tundra font-body">918-688-0232</a>
           </div>

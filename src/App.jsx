@@ -11,18 +11,18 @@ import Footer from './Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const processRef = useRef(null)
+  const requestQuoteRef = useRef(null)
 
   return (
     <>
-        <Header processRef={processRef}/>
+        <Header processRef={processRef} requestQuoteRef={requestQuoteRef}/>
         <Hero />
         <About />
         <Reasons />
         <Process ref={processRef}/>
         <Testimonial data={testimonial}/>
-        <Form />
+        <Form ref={requestQuoteRef} />
         <Footer />
     </>
   )
