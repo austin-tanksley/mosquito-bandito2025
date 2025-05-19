@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 
-export default function Hero({requestQuoteRef}) {
+export default function Hero({requestQuoteRef, learnMoreRef}) {
 
     gsap.registerPlugin(useGSAP);
 
@@ -11,6 +11,9 @@ export default function Hero({requestQuoteRef}) {
         gsap.from('.hero', {y:50})
     },[])
 
+  const scrollToLearnMore = () => {
+    learnMoreRef.current?.scrollIntoView({behavior:"smooth"});
+  }
   const scrollToRequestQuote = () => {
     requestQuoteRef.current?.scrollIntoView({behavior:"smooth"});
   }
@@ -22,7 +25,9 @@ export default function Hero({requestQuoteRef}) {
             >Make your way outside to a <span className='whitespace-nowrap'><span className='bg-bandito-red rounded-lg px-2 pb-2 whitespace-nowrap'>mosquito free</span> yard.</span>
             </h1>
             <div className='flex justify-center gap-[12px] lg:basis-1/2 2xl:flex-initial'>
-                <button className='text-tundra border-2 border-solid py-2 px-2 rounded-lg font-semibold hover:bg-bandito-red-400 duration-500'
+                <button 
+                  onClick={()=> scrollToLearnMore()}
+                  className='text-tundra border-2 border-solid py-2 px-2 rounded-lg font-semibold hover:bg-bandito-red-400 duration-500'
                 >Learn More</button>
                 <button
                     onClick={()=> scrollToRequestQuote()}
