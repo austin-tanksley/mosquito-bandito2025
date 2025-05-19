@@ -3,7 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import LOGO from '/mosquito-bandito-logo.svg'
 import PHONE_ICON from '/phone.svg'
 
-const navBarStyle = 'hover:font-semibold cursor-pointer'
+const navBarStyle = 'hover:font-semibold cursor-pointer duration-500'
 
 function Header({processRef, requestQuoteRef}) {
 

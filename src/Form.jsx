@@ -18,35 +18,43 @@ return (
         >
           <div className="form-ite grid">
             <label htmlFor="first-name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
-            <input type="text" id="First-Name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <input  required autoComplete="given-name" type="text" id="first-name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
             <label htmlFor="last-name" className="font-body text-bandito-grey-400 text-sm font-semibold">Last Name*</label>
-            <input type="text" id="last-name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <input required autoComplete="family-name" type="text" id="last-name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
             <label htmlFor="email" className="font-body text-bandito-grey-400 text-sm font-semibold" >Email*</label>
-            <input type="email" id="email" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <input required autoComplete="email" type="email" id="email" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
             <label htmlFor="phone" className="font-body text-bandito-grey-400 text-sm font-semibold" >Phone Number*</label>
-            <input type="text" id="phone" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <input autoComplete="on" type="text" id="phone" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
             <label htmlFor="street-address" className="font-body text-bandito-grey-400 text-sm font-semibold" >Street Adress*</label>
-            <input type="text" id="Street-Address" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <input autoComplete="street-address" type="text" id="street-address" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
-            <label htmlFor="Apartment" className="font-body text-bandito-grey-400 text-sm font-semibold" >Apt., Suite, Etc.</label>
-            <input type="text" id="Apartment" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <label htmlFor="city" className="font-body text-bandito-grey-400 text-sm font-semibold" >City*</label>
+            <input autoComplete="on" type="text" id="city" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div className="form-item grid">
-            <label htmlFor="Zip-Code" className="font-body text-bandito-grey-400 text-sm font-semibold" >Zip Code*</label>
-            <input type="text" id="Zip-Code" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+            <label htmlFor="state" className="font-body text-bandito-grey-400 text-sm font-semibold" >State*</label>
+            <input autoComplete="on" type="text" id="state" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+          </div>
+          <div className="form-item grid">
+            <label htmlFor="apartment" className="font-body text-bandito-grey-400 text-sm font-semibold" >Apt., Suite, Etc.</label>
+            <input autoComplete="off" type="text" id="apartment" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
+          </div>
+          <div className="form-item grid">
+            <label htmlFor="zip-code" className="font-body text-bandito-grey-400 text-sm font-semibold" >Zip Code*</label>
+            <input autoComplete="on" type="text" id="zip-code" required className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
           <div></div>
           <div></div>
-          <button className="justify-self-end bg-bandito-green-400 text-tundra px-6 py-2 rounded-lg border-solid border-bandito-green border-[3px] hover:bg-bandito-green-200 duration-500">Request</button>
+          <button type="submit" className="justify-self-end bg-bandito-green-400 text-tundra px-6 py-2 rounded-lg border-solid border-bandito-green border-[3px] hover:bg-bandito-green-200 duration-500">Request</button>
         </form>
       </div>
     </div>

@@ -17,7 +17,7 @@ function App() {
   return (
     <>
         <Header processRef={processRef} requestQuoteRef={requestQuoteRef}/>
-        <Hero />
+        <Hero requestQuoteRef={requestQuoteRef}/>
         <About />
         <Reasons />
         <Process ref={processRef}/>
