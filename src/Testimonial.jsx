@@ -31,7 +31,7 @@ export default function Testimonial({ data = [] }) {
   });
 
   return (
-    <div className="container py-24 mx-auto max-w-[1024px] px-2 mb-24">
+    <div className="container py-24 mx-auto max-w-[1024px] px-1 mb-24">
       <h2 className="mx-auto py-1 mb-8 border-b-bandito-red border-b-2 font-display text-2xl w-fit">
         What Our Customers Are Saying
       </h2>
@@ -51,7 +51,7 @@ export default function Testimonial({ data = [] }) {
         {/* Slide Content */}
         <div
           {...swipeHandlers}
-          className="flex-1 min-h-[120px] flex justify-center items-center text-center px-4"
+          className="flex-1 min-h-[120px] flex justify-center items-center text-center px-1"
         >
           <div ref={contentRef}>
             <p className="text-lg mb-2 font-body">{data[slide]?.review}</p>
