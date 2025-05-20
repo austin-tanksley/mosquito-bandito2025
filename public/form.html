@@ -1,0 +1,16 @@
+<!-- public/form.html -->
+<body>
+  <!-- Hidden form for Netlify to parse -->
+  <form name="request-quote" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="request-quote" />
+    <!-- Define every field with a name attribute -->
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="email" name="email" />
+    <input type="text" name="phone" />
+    <!-- etc… -->
+    <p hidden>
+      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
+  </form>
+</body>
