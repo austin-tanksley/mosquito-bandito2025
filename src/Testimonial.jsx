@@ -51,7 +51,7 @@ export default function Testimonial({ data = [] }) {
         {/* Slide Content */}
         <div
           {...swipeHandlers}
-          className="flex-1 min-h-[120px] flex justify-center items-center text-center px-1"
+          className="flex-1 min-h-[120px] flex justify-center items-center text-center px-1 overflow-hidden"
         >
           <div ref={contentRef}>
             <p className="text-lg mb-2 font-body">{data[slide]?.review}</p>
