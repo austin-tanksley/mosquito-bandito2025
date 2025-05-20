@@ -13,7 +13,7 @@ return (
           <h2 className="  font-display text-2xl mb-4">Request a Quote</h2>
           <p className="pb-4 mr-4 border-b-4 w-fit border-bandito-red font-body ">We’ll give you a call, and schedule a good time to come out and assess your property.  </p>
         </div>
-        <form name="request quote" netlify
+        <form name="request quote" netlify method="POST"
           className="grid gap-4 md:grid-cols-2"
         >
           <div className="form-item grid">
