@@ -5,7 +5,7 @@ const Reasons = forwardRef((_,ref) => {
     return(
         <div id="learn-more" ref={ref}
         className="container mx-auto bg-bandito-tan px-4 py-18 md:px-18 sm:rounded-lg mb-8">
-            <h2 className="mx-auto text-center font font-display mb-8 text-2xl">Why Choose Mosquito Bandito?</h2>
+            <h2 className="mx-auto text-center font font-display mb-8 text-3xl">Why Choose Mosquito Bandito?</h2>
             <div className="mx-auto max-w-[768px] grid gap-4">
                 <ReasonCard 
                     hiddenProp = {false}
