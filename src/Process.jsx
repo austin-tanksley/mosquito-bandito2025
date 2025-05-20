@@ -12,7 +12,7 @@ const Process = forwardRef((_,ref) =>
             id="process"
         >
             <h2 
-                className="mx-auto py-4 text-bandito-green border-b-bandito-red border-b-3 font-display text-3xl w-fit"
+                className="mx-auto py-4 text-center text-bandito-green border-b-bandito-red border-b-3 font-display text-3xl w-fit"
             >
                 Our 3-Step Mosquito Protection Process
             </h2>
