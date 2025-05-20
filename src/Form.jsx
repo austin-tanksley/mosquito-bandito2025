@@ -13,10 +13,10 @@ return (
           <h2 className="  font-display text-2xl mb-4">Request a Quote</h2>
           <p className="pb-4 mr-4 border-b-4 w-fit border-bandito-red font-body ">We’ll give you a call, and schedule a good time to come out and assess your property.  </p>
         </div>
-        <form action=""
+        <form name="request quote" netlify
           className="grid gap-4 md:grid-cols-2"
         >
-          <div className="form-ite grid">
+          <div className="form-item grid">
             <label htmlFor="first-name" className="font-body text-bandito-grey-400 text-sm font-semibold">First Name*</label>
             <input  required autoComplete="given-name" type="text" id="first-name" className="inset-shadow-sm inset-shadow-bandito-grey bg-white p-2 rounded-lg"/>
           </div>
